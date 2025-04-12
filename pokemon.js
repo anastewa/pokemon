@@ -208,4 +208,8 @@ console.log(stats2); // [45, 49]
 let baseStatsArray2 = data.stats.map(stat => stat.base_stat);
 baseStatsArray[0] = "Анастейша ";
 console.log(baseStatsArray); //['Анастейша ', 49, 49, 65, 65, 45]
-
+//шаг 16
+document.querySelector("#pokemon-name").innerHTML = data.forms[0].name;
+document.querySelector("#pokemon-avatar").src = data.sprites.front_default;
+document.querySelector("#info").innerHTML = `height: ${data.height}, weight: ${data.weight}`;
+document.querySelector("div").innerHTML += `<img src="${data.sprites.back_default}">`;
